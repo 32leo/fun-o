@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>tipos de função</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>programa de doma de números </h1>
+
+    <div id="res"></div>
+
+    <script>
+        // bloco de criação de variaveis de aplicação
+        let val1 = prompt("informe o 1° numero");
+        let val2 = prompt("informe o 2° numero");
+
+        // bloco de criação de função q utilizará as variaveis de criadas 
+        // 1° função no formato clássico
+
+        //2° função no formato clássico
+
+        function somarNumeros(v1,v2){
+         let resultado = parseInt(v1) + parseInt(v2); 
+    // 1° forma de exivir o resultario ao usuario
+    // alert( "o resultado da soma é " +  resultado);
+      // 3° forma de exivir o resultario ao usuario
+      document.write("o resultado da soma é " +  resultado);
+
+        
+         // 4° forma de exivir o resultario ao usuario
+         document.getElementById('res').innerHTML = " o resultado da soma é " +  resultado;
+        }
+
+    somarNumeros(val1, val2);
+
+    </script>
+   
+</body>
+</html>
