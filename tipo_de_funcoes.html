@@ -10,6 +10,12 @@
 </head>
 <body>
     <h1>programa de doma de números </h1>
+    <style>
+        #res{
+            color: aliceblue;
+            background-color: blue;
+        }
+    </style>
 
     <div id="res"></div>
 
@@ -20,21 +26,30 @@
 
         // bloco de criação de função q utilizará as variaveis de criadas 
         // 1° função no formato clássico
+        // console.log("o resultado da soma é " + resultado)  
 
         //2° função no formato clássico
-
-        function somarNumeros(v1,v2){
-         let resultado = parseInt(v1) + parseInt(v2); 
+        // function somarNumeros(v1,v2){
+        //  let resultado = parseInt(v1) + parseInt(v2);
+          
     // 1° forma de exivir o resultario ao usuario
     // alert( "o resultado da soma é " +  resultado);
       // 3° forma de exivir o resultario ao usuario
-      document.write("o resultado da soma é " +  resultado);
+    //   document.write("o resultado da soma é " +  resultado);
 
         
          // 4° forma de exivir o resultario ao usuario
-         document.getElementById('res').innerHTML = " o resultado da soma é " +  resultado;
+        //  document.getElementById('res').innerHTML = " o resultado da soma é " +  resultado;
+        // }
+        var somarNumeros = (v1, v2) =>{
+            let resultado = parseInt(v1) + parseInt (v2);
+            var somarNumeros = (v1, v2) => parseInt(v1) + parseInt(v2);
+            // chama a arrow function para execução    
+            document.getElementById('res').innerHTML = " o resultado da soma é " +  resultado;
+        
         }
 
+        
     somarNumeros(val1, val2);
 
     </script>
